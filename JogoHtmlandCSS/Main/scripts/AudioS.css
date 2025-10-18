@@ -1,0 +1,119 @@
+/* volcano-audio.css */
+.volcano-player {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(90deg, #5a1a00, #c93a00, #ff8c00);
+  border: 3px solid #ff4500;
+  border-radius: 50px;
+  padding: 10px 16px;
+  box-shadow: 0 0 20px rgba(255, 69, 0, 0.7);
+  width: 380px;
+  transition: transform 0.2s ease-in-out;
+  overflow: visible;
+}
+
+.volcano-player:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 140, 0, 0.9);
+}
+
+.volcano-play {
+  background: radial-gradient(circle, #ff8c00, #ff4500);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 8px #ff4500;
+}
+
+.volcano-play:hover {
+  background: radial-gradient(circle, #ffb347, #ff4500);
+}
+
+.volcano-progress {
+  flex-grow: 1;
+  height: 12px;
+  background: #3b0a00;
+  border-radius: 6px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: inset 0 0 6px rgba(255, 69, 0, 0.8);
+  position: relative;
+}
+
+.volcano-progress-filled {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(270deg, #ff4500, #ff8c00, #ff4500);
+  background-size: 200% 100%;
+  animation: lavaFlow 2s linear infinite;
+  transition: width 0.1s linear;
+}
+
+@keyframes lavaFlow {
+  0% { background-position: 0% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+.volcano-time {
+  color: #ffe4b5;
+  font-family: monospace;
+  font-size: 14px;
+  text-shadow: 0 0 5px #ff4500;
+  min-width: 50px;
+  text-align: right;
+}
+
+.volcano-volume {
+  -webkit-appearance: none;
+  width: 60px;
+  height: 6px;
+  background: linear-gradient(90deg, #3b0a00, #ff4500);
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: inset 0 0 5px rgba(255, 69, 0, 0.7);
+  position: relative;
+  overflow: visible;
+}
+
+.volcano-volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #ff8c00;
+  border-radius: 50%;
+  box-shadow: 0 0 6px #ff4500;
+}
+
+/* Ember animation */
+.ember {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: radial-gradient(circle, #ffd700, #ff4500, transparent);
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.9;
+  animation: emberRise 1s ease-out forwards;
+  z-index: 5;
+}
+
+@keyframes emberRise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-40px) scale(0);
+    opacity: 0;
+  }
+}
