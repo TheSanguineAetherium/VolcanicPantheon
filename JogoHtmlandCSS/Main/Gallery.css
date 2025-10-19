@@ -1,0 +1,145 @@
+  h1 
+  {
+    border-color: red;
+    border: 10px ridge silver;
+    border-radius: 10px;
+    font-family: "Bebas Neue", sans-serif;
+    vertical-align: center;
+    font-size: 90px;
+    text-align: center;
+    background-image: url("images/King.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+  } 
+
+  html{
+    background: url(images/JogoDomain.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+.center
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+div.gallery-item-portrait {
+  margin: 5px;
+  height: 800px;
+  width: auto;
+}
+
+div.gallery-item-portrait:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item-portrait img {
+  width: 100%;
+  height: 100%;
+}
+
+div.gallery-item-horizontal {
+  margin: 5px;
+  height: 520px;
+  width: auto;
+}
+
+div.gallery-item-horizontal img {
+  width: 100%;
+  height: 100%;
+}
+
+div.gallery-item-horizontal:hover {
+  border: 1px solid #777;
+}
+
+#myVideo 
+{
+  display: none; 
+} 
+        
+#playButton 
+{
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+#playButton img 
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+#king {
+  border: 55px solid #8b0000;
+  filter: url(#lava-border);
+  animation: volcano-colors 20s ease-in-out infinite;
+  box-shadow: 
+      inset 0 0 30px #ff4500,
+      inset 0 0 15px #000,
+      0 0 40px rgba(139, 0, 0, 0.8),
+      0 0 20px rgba(255, 69, 0, 0.6);
+}
+
+@keyframes volcano-colors {
+  0% {
+      border-color: #8b0000;
+      box-shadow: 
+          inset 0 0 30px #ff4500,
+          inset 0 0 15px #000,
+          0 0 40px rgba(139, 0, 0, 0.8),
+          0 0 20px rgba(255, 69, 0, 0.6);
+  }
+  25% {
+      border-color: #ff4500;
+      box-shadow: 
+          inset 0 0 30px #ff6347,
+          inset 0 0 15px #000,
+          0 0 40px rgba(255, 69, 0, 0.9),
+          0 0 20px rgba(255, 140, 0, 0.7);
+  }
+  50% {
+      border-color: #ff6347;
+      box-shadow: 
+          inset 0 0 30px #ffa500,
+          inset 0 0 15px #000,
+          0 0 40px rgba(255, 99, 71, 0.9),
+          0 0 20px rgba(255, 165, 0, 0.7);
+  }
+  75% {
+      border-color: #b22222;
+      box-shadow: 
+          inset 0 0 30px #ff4500,
+          inset 0 0 15px #000,
+          0 0 40px rgba(178, 34, 34, 0.9),
+          0 0 20px rgba(255, 69, 0, 0.6);
+  }
+  100% {
+      border-color: #8b0000;
+      box-shadow: 
+          inset 0 0 30px #ff4500,
+          inset 0 0 15px #000,
+          0 0 40px rgba(139, 0, 0, 0.8),
+          0 0 20px rgba(255, 69, 0, 0.6);
+  }
+}
+  
