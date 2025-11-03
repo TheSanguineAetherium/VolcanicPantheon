@@ -98,18 +98,6 @@ h1 {
   }
 }
 
-/* dynamically generate 10 random sparks using nth-child */
-.navbar ul:hover span.spark:nth-child(1) { --x: -20px; --y: -100px; animation-duration: 4s; animation-delay: 0s; }
-.navbar ul:hover span.spark:nth-child(2) { --x: 30px; --y: -130px; animation-duration: 5s; animation-delay: 0.4s; }
-.navbar ul:hover span.spark:nth-child(3) { --x: -10px; --y: -160px; animation-duration: 6s; animation-delay: 0.8s; }
-.navbar ul:hover span.spark:nth-child(4) { --x: 15px; --y: -120px; animation-duration: 4.5s; animation-delay: 1.2s; }
-.navbar ul:hover span.spark:nth-child(5) { --x: -25px; --y: -180px; animation-duration: 5.5s; animation-delay: 1.8s; }
-.navbar ul:hover span.spark:nth-child(6) { --x: 40px; --y: -150px; animation-duration: 6.5s; animation-delay: 2.2s; }
-.navbar ul:hover span.spark:nth-child(7) { --x: -35px; --y: -200px; animation-duration: 7s; animation-delay: 2.6s; }
-.navbar ul:hover span.spark:nth-child(8) { --x: 25px; --y: -140px; animation-duration: 4.8s; animation-delay: 3s; }
-.navbar ul:hover span.spark:nth-child(9) { --x: -15px; --y: -160px; animation-duration: 6.2s; animation-delay: 3.4s; }
-.navbar ul:hover span.spark:nth-child(10){ --x: 10px; --y: -110px; animation-duration: 5.8s; animation-delay: 3.8s; }
-
 /* Navbar links */
 .navbar li {
   float: left;
@@ -186,3 +174,4 @@ h1 {
   0% { transform: translateX(-50%) translateY(0); opacity: 1; }
   100% { transform: translateX(-50%) translateY(15px); opacity: 0; }
 }
+
